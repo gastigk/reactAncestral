@@ -1,6 +1,7 @@
 import "./ProductListContainer.css"
 import {products} from "../../products"
 import ProductList from "../ProductList/ProductList"
+import LinearColor from "../Progress/Progress"
 
 import {useParams} from "react-router-dom"
 import {useState, useEffect} from "react"
@@ -18,7 +19,7 @@ const ProductListContainer = () => {
     const getProducts = new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve(categoryName ? productsFiltered : products)
-      }, 700)
+      }, 2000)
     })
 
     getProducts
@@ -32,8 +33,10 @@ const ProductListContainer = () => {
   }, [categoryName])
 
   return (
-    <div className="light">
-      <ProductList items={items} />
+    <div>
+
+      { items.length > 0 ? <ProductList items={items} /> : <LinearColor color="success" />}
+
     </div>
   )
 }

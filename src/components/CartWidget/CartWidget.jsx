@@ -1,20 +1,26 @@
-import "./CartWidget.css"
-import {Link} from "react-router-dom"
-import {GiCandleSkull} from "react-icons/gi";
+import styles from "./CartWidget.module.css";
+import { Link } from "react-router-dom";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import Filter3Icon from "@mui/icons-material/Filter3";
 
 export const CartWidget = () => {
+
   return (
-    <div className="container-cart">
+    <div className={styles.containerCart}>
       <Link to="/cart">
-        <GiCandleSkull
-         style={{
-            fontSize: "4rem",
-           color: "#69795e",
+        <ShoppingCartIcon
+          style={{
+            fontSize: "2rem",
+            color: "#69795e",
           }}
         />
-        <div className="cart-counter">
-          <span className="counter">13</span>
-        </div>
+
+        <Filter3Icon
+          style={{
+            color: "#69795e",
+            marginBottom: "1rem"
+          }}
+        />
       </Link>
     </div>
   );

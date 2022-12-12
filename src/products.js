@@ -7,7 +7,7 @@ export const products = [
         stock: 30,
         description: "Velas de cera de abeja, 100% naturales",
         category: "velas",
-        img: "https://www.google.com/url?sa=i&url=http%3A%2F%2Ftusvelas.com%2Fproducto%2F2-velas-cera-de-abeja-18cm-tipo-panal-de-miel&psig=AOvVaw1F4WQe9UZgPD30T4iPLlE-&ust=1670770000559000&source=images&cd=vfe&ved=2ahUKEwist6y0pe_7AhVggpUCHY9FCmgQjRx6BAgAEAo"
+        img: "https://res.cloudinary.com/drl62fylt/image/upload/v1670790878/mood_rfmqec_a3094a.jpg"
     },
     {
         id: 2,
@@ -16,7 +16,7 @@ export const products = [
         stock: 70,
         description: "Velas de cera de soja y abeja, ideales para intencionar tus deseos",
         category: "velas",
-        img: "https://www.google.com/url?sa=i&url=http%3A%2F%2Ftusvelas.com%2Fproducto%2F2-velas-cera-de-abeja-18cm-tipo-panal-de-miel&psig=AOvVaw1F4WQe9UZgPD30T4iPLlE-&ust=1670770000559000&source=images&cd=vfe&ved=2ahUKEwist6y0pe_7AhVggpUCHY9FCmgQjRx6BAgAEAo"
+        img: "https://res.cloudinary.com/drl62fylt/image/upload/v1670790878/mood_rfmqec_a3094a.jpg"
     },
     {
         id: 3,
@@ -25,7 +25,7 @@ export const products = [
         stock: 15,
         description: "Ritual para limpiar tu cuerpo áurico",
         category: "rituales",
-        img: "https://www.google.com/url?sa=i&url=http%3A%2F%2Ftusvelas.com%2Fproducto%2F2-velas-cera-de-abeja-18cm-tipo-panal-de-miel&psig=AOvVaw1F4WQe9UZgPD30T4iPLlE-&ust=1670770000559000&source=images&cd=vfe&ved=2ahUKEwist6y0pe_7AhVggpUCHY9FCmgQjRx6BAgAEAo"
+        img: "https://res.cloudinary.com/drl62fylt/image/upload/v1670790878/mood_rfmqec_a3094a.jpg"
     },
     {
         id: 4,
@@ -34,7 +34,7 @@ export const products = [
         stock: 13,
         description: "Ritual para limpiar tu ambiente personal",
         category: "rituales",
-        img: "https://www.google.com/url?sa=i&url=http%3A%2F%2Ftusvelas.com%2Fproducto%2F2-velas-cera-de-abeja-18cm-tipo-panal-de-miel&psig=AOvVaw1F4WQe9UZgPD30T4iPLlE-&ust=1670770000559000&source=images&cd=vfe&ved=2ahUKEwist6y0pe_7AhVggpUCHY9FCmgQjRx6BAgAEAo"
+        img: "https://res.cloudinary.com/drl62fylt/image/upload/v1670790878/mood_rfmqec_a3094a.jpg"
     },
     {
         id: 5,
@@ -43,7 +43,7 @@ export const products = [
         stock: 22,
         description: "Ritual para intencionar tu pedido y conseguir cumplir tu deseo",
         category: "rituales",
-        img: "https://www.google.com/url?sa=i&url=http%3A%2F%2Ftusvelas.com%2Fproducto%2F2-velas-cera-de-abeja-18cm-tipo-panal-de-miel&psig=AOvVaw1F4WQe9UZgPD30T4iPLlE-&ust=1670770000559000&source=images&cd=vfe&ved=2ahUKEwist6y0pe_7AhVggpUCHY9FCmgQjRx6BAgAEAo"
+        img: "https://res.cloudinary.com/drl62fylt/image/upload/v1670790878/mood_rfmqec_a3094a.jpg"
     }
 
 ]
