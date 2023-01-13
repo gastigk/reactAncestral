@@ -1,0 +1,36 @@
+.cart-container{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.container-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.cart-info{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn-cart{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn-cart > button {
+    width: 50%;
+    height: 70%;
+}

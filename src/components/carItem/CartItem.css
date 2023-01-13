@@ -1,0 +1,13 @@
+.cart-item{
+    min-width: 500px;
+    min-height: 200px;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    box-shadow: 0px 2px 5px 0px #12381e;
+    border-radius: 10px;
+    padding: 0 10px;
+    background-color: #EAE7B1;
+    color: #12381e;
+}

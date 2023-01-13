@@ -1,33 +1,44 @@
-import NavBar from "./components/NavBar/NavBar"
-import ProductListContainer from "./components/ProductListContainer/ProductListContainer"
-import ProductDetailContainer from "./components/ProductDetailContainer/ProductDetailContainer"
-import {Error} from "./components/Error/Error"
-import Cart from "./components/Cart/Cart"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 
-import {BrowserRouter, Routes, Route} from "react-router-dom"
+import ItemDetailContainer from "./components/itemDetail/ItemDetailContainer";
+import ItemListContainer from "./components/itemList/ItemListContainer";
+import Navbar from "./components/navBar/NavBar"
+import Cart from "./components/cart/Cart";
+import CartContextProvider from "./context/CartContext";
+import Form from "./components/form/Form";
+import { Error }  from "./components/error/Error"
 
-const App = () => {
+function App() {
 
-  // creación del ruteo
   return (
-
+   
     <BrowserRouter>
+      <CartContextProvider>
 
-      <NavBar />
+        <Navbar />
 
-      <Routes>
 
-        <Route path="/" element={<ProductListContainer />} />
-        <Route path="/Category/:categoryName" element={<ProductListContainer />} />
-        <Route path="/ProductDetail/:id" element={<ProductDetailContainer />} />
-        <Route path="/Cart" element={<Cart />} />
-        <Route path="*" element={<Error />} />
+        <Routes>
 
-      </Routes>
+          <Route path="/" element={<ItemListContainer /> } />
+          
+          <Route path="/category/:categoryName" element={<ItemListContainer />} />
+          
+          <Route path="/itemDetail/:id" element={ <ItemDetailContainer />} />
 
+          <Route path="/checkout" element={ <Form /> } />
+
+          <Route path="/cart" element={ <Cart /> } />
+
+          <Route path="*" element={<Error />} />
+
+        </Routes>
+
+      </CartContextProvider>
     </BrowserRouter>
-  );
 
+  );
+  
 }
 
 export default App;

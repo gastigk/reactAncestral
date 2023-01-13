@@ -1,26 +1,25 @@
-import styles from "./CartWidget.module.css";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import "./CartWidget.css";
+import { CartContext } from "../../context/CartContext";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import Filter3Icon from "@mui/icons-material/Filter3";
 
 export const CartWidget = () => {
+  const { cart } = useContext(CartContext);
 
   return (
-    <div className={styles.containerCart}>
+    <div className="containerCart">
       <Link to="/cart">
         <ShoppingCartIcon
-          style={{
+          sx={{
             fontSize: "2rem",
             color: "#69795e",
           }}
         />
 
-        <Filter3Icon
-          style={{
-            color: "#69795e",
-            marginBottom: "1rem"
-          }}
-        />
+        <div className="bubble-counter">
+          <span sx={{ color: "#69795e" }}>{cart.length}</span>
+        </div>
       </Link>
     </div>
   );

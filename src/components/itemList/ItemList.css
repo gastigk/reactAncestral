@@ -1,9 +1,11 @@
 .container-cards{
-    padding: 10%;
+    padding: 25px;
     width: 100%;
+    min-height: 900px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 100px;
+    background-color: #EAE7B1;
 }

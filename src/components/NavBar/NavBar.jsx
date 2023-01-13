@@ -1,5 +1,6 @@
 import * as React from "react";
-import { CartWidget } from "../CartWidget/CartWidget";
+import { CartWidget } from "../cartWidget/CartWidget";
+// importación de MUI
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -13,6 +14,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AutoFixHighIcon from "@mui/icons-material/AutoFixHigh";
 
+// creación de secciones del NavBar
 const pages = ["Productos", "Velas", "Rituales"];
 const settings = ["Perfil", "Carrito", "Mis compras", "Logout"];
 
@@ -33,7 +35,7 @@ const NavBar = () => {
   };
 
   return (
-    <AppBar position="static" sx={{ bgcolor: "#12381e" }}>
+    <AppBar position="sticky" sx={{ bgcolor: "#12381e" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AutoFixHighIcon
@@ -64,7 +66,7 @@ const NavBar = () => {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             <Button
               style={{ textDecoration: "none" }}
-              key="Rituales"
+              key=""
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: "#dbdebf", display: "block" }}
               href="/"
@@ -73,7 +75,7 @@ const NavBar = () => {
             </Button>
             <Button
               style={{ textDecoration: "none" }}
-              key="Rituales"
+              key="velas"
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: "#dbdebf", display: "block" }}
               href="/category/velas"
@@ -82,7 +84,7 @@ const NavBar = () => {
             </Button>
             <Button
               style={{ textDecoration: "none" }}
-              key="Rituales"
+              key="rituales"
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: "#dbdebf", display: "block" }}
               href="/category/rituales"
@@ -93,40 +95,6 @@ const NavBar = () => {
 
           <CartWidget />
 
-          <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar
-                  sx={{ bgcolor: "#dbdebf" }}
-                  alt="Remy Sharp"
-                  src="/broken-image.jpg"
-                />
-              </IconButton>
-            </Tooltip>
-
-            <Menu
-              sx={{ mt: "45px" }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
         </Toolbar>
       </Container>
     </AppBar>
